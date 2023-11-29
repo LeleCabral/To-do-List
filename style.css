@@ -1,0 +1,227 @@
+:root{
+    --cor-escuro: #8c5b65;
+    --cor-claro: #d4a7b0;
+    --titulo-escuro: #be9487;
+    --titulo-claro: #e3d4c2;
+   --titulo-claro: #e3d4c2;
+        
+        }
+
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+        
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-family: 'Public Sans', sans-serif;
+        }
+        
+        header {
+        padding: 2rem;
+        margin: auto;
+        
+        }
+        
+        header h1 {
+        letter-spacing: 0.5rem;
+        font-size: 3rem;
+        font-weight: 300;
+        }
+        
+        header p {
+        padding: 1rem;
+        color: antiquewhite;
+        font-size: 1.5rem;
+        }
+        
+        .container{
+        width: 100vh;
+        min-height: 100vh;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: 10px;
+        
+        }
+        
+        .todo{
+        width: 100%;
+        max-width: 100;
+        height: auto;
+        background: #e3d4c2;
+        margin: 6rem 1rem 1rem;
+        padding: 2rem 2rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 15px 15px 10px black;
+        
+        
+        }
+        
+        .todo h2 {
+        color: #000000;
+        display: block;
+        align-items: center;
+        margin-bottom: 1rem;
+        }
+        
+        img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 50px;
+        display: flex;
+        margin-left: 25rem;
+        margin-right: 10rem;
+        margin-top: 0;
+        align-items: center;
+        margin-bottom: 2rem;
+        
+        }
+        
+        .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--cor-claro);
+        border-radius: 3rem;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+        }
+        
+        input {
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1rem;
+        font-weight: 1rem;
+        }
+        
+        button {
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        background: var(--cor-escuro);
+        color: #ffffff;
+        font-size: 1rem;
+        cursor: pointer;
+        }
+        
+        ul {
+        margin: 0;
+        padding: 0;
+        }
+        
+        ul li {
+        list-style: none;
+        font-size: 1rem;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 700;
+        padding: 20px 3px 5px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s;
+        }
+        
+        ul li:hover{
+        background: #ffdfe5;
+        }
+        
+        ul li::before {
+        content: '';
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-image: url(images/unchecked.png);
+        background-size: cover;
+        background-position: center ;
+        top: 13px;
+        left: 8px;
+        
+        }
+        
+        #todo.list ul li{
+        background: #888;
+        color: #fff;
+        text-decoration: line-through;
+        }
+        
+        #todo.list ul li::before{
+        background-image: url(images/check-circle.png);
+        content: "";
+        position: absolute;
+        border-color: var(--cor-escuro);
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+        
+        }
+
+        ul li.checked{
+            color: #000000;
+            text-decoration: line-through;
+
+        }
+
+        ul li.checked::before{
+            background-image: url(images/icons8-check.svg)
+        }
+        
+        ul li span {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: center;
+        color: var(--cor-escuro);
+        
+        }
+
+        ul li span:hover {
+            background: #be9487;
+
+        }
+        
+        
+        
+        header, footer{
+        background-color: var(--cor-escuro);
+        }
+
+        footer{
+            margin-top: auto;
+            background-color: var(--titulo-claro);
+            padding: 1rem;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        
+        h1, h2, h3, p {
+        text-align: center;
+        }
+        
+        h1{
+        color: var(--titulo-claro)
+        }
+        
+        main{
+        background-color: var(--cor-escuro);
+        }
+        
+        
